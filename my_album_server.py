@@ -24,6 +24,9 @@ def albums(artist):
 
 @route("/albums", method="POST")
 def album_add():
+    """
+    POST запрос по адресу /albums, который при передаче валидных данных добавляет новый альбом в базу данных.
+    """
     album_data = {
         "year": request.forms.get("year"),
         "artist": request.forms.get("artist"),

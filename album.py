@@ -11,7 +11,6 @@ class Album(Base):
     """
     Описывает структуру таблицы album для хранения записей музыкальной библиотеки
     """
-
     __tablename__ = "album"
 
     id = sa.Column(sa.INTEGER, primary_key=True)
